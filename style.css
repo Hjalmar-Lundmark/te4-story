@@ -45,23 +45,15 @@ h1 {
 
 .logo {
   height: 6em;
-  padding: 1.5em;
+  margin: 1em;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 24px #ffe100);
 }
 .logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  filter: drop-shadow(0 0 2em #646cffaa);
 }
 
 button {
@@ -93,5 +85,16 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+
+  > * > p > a {
+      color: lightblue;
   }
 }
