@@ -30,7 +30,7 @@ body {
 }
 
 html {
-  background-image: url(/public/space.jpg);
+  background-image: url(/space.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
