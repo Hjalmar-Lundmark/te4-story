@@ -66,6 +66,8 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+
+  margin-bottom: 1.5em;
 }
 button:hover {
   border-color: #646cff;
@@ -93,8 +95,13 @@ footer {
   color: white;
   padding-bottom: 2rem;
   padding-top: 1rem;
+}
 
-  > * > p > a {
-      color: lightblue;
-  }
+#part1 {
+  filter: blur(5px);
+  transition: filter 300ms;
+}
+
+#end {
+  display: none;
 }
