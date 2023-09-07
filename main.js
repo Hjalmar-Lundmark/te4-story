@@ -72,9 +72,10 @@ document.querySelector('#app').innerHTML = `
   <div class="autoWidth">
     <p>
       Site created by <a href="https://github.com/Hjalmar-Lundmark">Hjalmar Lundmark</a> |
-      <a href="https://github.com/Hjalmar-Lundmark/te4-story">Github repo</a>.
-      <br>
-      Story written mainly by <a href="https://chat.openai.com/">ChatGPT</a>. 
+      <a href="https://github.com/Hjalmar-Lundmark/te4-story">Github repo</a>.<br>
+      
+      Story written mainly by <a href="https://chat.openai.com/">ChatGPT</a>. <br>
+      Background photo by <a href="https://unsplash.com/@vincentiu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vincentiu Solomon</a> on <a href="https://unsplash.com/photos/ln5drpv_ImI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     </p>
   </div>
 </footer>

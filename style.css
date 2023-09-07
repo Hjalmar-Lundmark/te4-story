@@ -29,6 +29,18 @@ body {
   min-height: 100vh;
 }
 
+html {
+  background-image: url(/public/space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  background-color: white;
+  padding: 1em;
+}
+
 .autoWidth {
   max-width: min(85ch, 100vw - 1rem);
   margin-inline: auto;
