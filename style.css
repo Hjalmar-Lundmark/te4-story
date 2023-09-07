@@ -55,17 +55,20 @@ h1 {
   text-align: center;
 }
 
-.logo {
+.star {
   height: 6em;
-  margin: 1em;
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
+.star:hover {
   filter: drop-shadow(0 0 24px #ffe100);
 }
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.starFlex {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  will-change: filter;
 }
 
 button {

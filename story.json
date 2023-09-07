@@ -1,0 +1,90 @@
+[
+    {
+        "id": 0,
+        "text": "Once upon a time in a small, picturesque village nestled between rolling hills and a tranquil river, there lived a curious and adventurous boy named Hjalmar. Hjalmar was known throughout the village for his insatiable curiosity and boundless imagination. He had a mop of unruly brown hair that always seemed to be in a perpetual state of disarray, and his bright blue eyes sparkled with excitement at the mere thought of a new adventure.\n\nOne sunny morning, Hjalmar woke up early, unable to contain his excitement. He had heard a legend from the village elders about a hidden cave deep within the heart of the forest, a cave rumored to hold a treasure of unimaginable value. Hjalmar decided that today would be the day he set out to uncover the secrets of the mysterious cave. \n\nAs Hjalmar prepared for his adventure, he realized he needed some supplies. What should he gather before setting off on his quest?",
+        "options": [
+            {
+                "nextId": 1,
+                "msg": "A sturdy backpack and map"
+            },
+            {
+                "nextId": 2,
+                "msg": "A lanturn, some food and a length of rope"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "text": "Hjalmar decided that a sturdy backpack and a map were essential for his adventure. He rummaged through his small room, gathering his backpack and carefully unfolded the map he had borrowed from the village library.\n\nWith his supplies in hand, Hjalmar set out towards the edge of the village where the dense forest awaited. As he entered the forest, he felt a sense of both excitement and trepidation. The ancient trees loomed overhead, their leaves casting dappled shadows on the forest floor. Birds chirped in the distance, and a gentle breeze rustled the leaves.\n\nAs Hjalmar ventured deeper into the forest, he came across a fork in the path. One trail led deeper into the woods, while the other seemed to wind back towards the village. Which path should Hjalmar choose?",
+        "options": [
+            {
+                "nextId": 3,
+                "msg": "Take the path deeper into the forest."
+            },
+            {
+                "nextId": 4,
+                "msg": "Follow the path that leads back to the village."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "Hjalmar's adventurous spirit led him to choose the path that led deeper into the forest. With his backpack securely strapped on and the map in hand, he walked along the winding trail, surrounded by the tranquil beauty of nature.\n\nAs he continued his journey, Hjalmar encountered various natural wonders. He stumbled upon a crystal-clear stream, where he stopped to quench his thirst. He marveled at the iridescent dragonflies hovering above the water's surface and the vibrant wildflowers that painted the forest floor.\n\nAfter a few hours of walking, Hjalmar noticed something unusual: a series of peculiar rock formations that seemed to resemble the shape of a dragon's head. Could this be a clue leading him closer to the hidden cave? Should he investigate the rock formations further?",
+        "options": [
+            {
+                "nextId": 5,
+                "msg": "Investigate the rock formations closely."
+            },
+            {
+                "nextId": 6,
+                "msg": "Continue on the path without stopping to examine them."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "text": "Hjalmar's curiosity got the better of him, and he decided to investigate the rock formations closely. He approached the dragon-shaped rocks, carefully examining their intricate details. As he studied the rocks, he noticed that one of the dragon's eyes seemed different from the rest. It had a faint glimmer, almost as if there was something hidden within.\n\nWith cautious excitement, Hjalmar reached out and gently touched the eye of the dragon-shaped rock. To his astonishment, it shifted and revealed a hidden button. Should Hjalmar press the button to see what happens?",
+        "options": [
+            {
+                "nextId": 7,
+                "msg": "Press the button."
+            },
+            {
+                "nextId": 8,
+                "msg": "Decide it's too risky and continue on the path."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "text": "Hjalmar, filled with anticipation, pressed the hidden button on the dragon-shaped rock. As he did, he heard a soft, rumbling noise, and the ground beneath him began to vibrate gently. Suddenly, the ground gave way, and a concealed entrance to a dark and mysterious cave was revealed before him.\n\nWith his lantern ready and his map in hand, Hjalmar took a deep breath and stepped into the cave's cool, shadowy depths. The narrow passageway led him deeper underground, and as he ventured further, he began to notice strange markings on the cave walls. These ancient symbols seemed to guide him, almost as if they were leading him towards something significant.\n\nAfter what felt like hours of exploring, Hjalmar arrived at a cavern bathed in a soft, eerie blue glow. In the center of the cavern lay an incredible sight: a treasure chest covered in vines and moss. It was unlike anything he had ever seen before.\n\nWhat should Hjalmar do now?",
+        "options": [
+            {
+                "nextId": 9,
+                "msg": "Approach the treasure chest and attempt to open it."
+            },
+            {
+                "nextId": 10,
+                "msg": "Examine the surrounding cavern more closely before deciding what to do."
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "text": "Hjalmar, filled with anticipation, pressed the hidden button on the dragon-shaped rock. As he did, he heard a soft, rumbling noise, and the ground beneath him began to vibrate gently. Suddenly, the ground gave way, and a concealed entrance to a dark and mysterious cave was revealed before him.\n\nWith his lantern ready and his map in hand, Hjalmar took a deep breath and stepped into the cave's cool, shadowy depths. The narrow passageway led him deeper underground, and as he ventured further, he began to notice strange markings on the cave walls. These ancient symbols seemed to guide him, almost as if they were leading him towards something significant.\n\nAfter what felt like hours of exploring, Hjalmar arrived at a cavern bathed in a soft, eerie blue glow. In the center of the cavern lay an incredible sight: a treasure chest covered in vines and moss. It was unlike anything he had ever seen before.\n\nWhat should Hjalmar do now?",
+        "options": [
+            {
+                "nextId": 9,
+                "msg": "Approach the treasure chest and attempt to open it."
+            },
+            {
+                "nextId": 10,
+                "msg": "Examine the surrounding cavern more closely before deciding what to do."
+            },
+            {
+                "nextId": 11,
+                "msg": "Examine the surrounding cavern more closely before deciding what to do."
+            }
+        ]
+    }
+]

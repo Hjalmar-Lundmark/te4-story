@@ -1,6 +1,12 @@
 import './style.css'
 import star from '/star.svg'
 
+//test
+import json from './story.json'
+const story = json;
+console.log(story)
+//end test
+
 document.querySelector('#app').innerHTML = `
 <main class="autoWidth">
   <div id="Intro">
@@ -78,11 +84,22 @@ document.querySelector('#app').innerHTML = `
     </p>
 
     <h3>Thanks for reading! What rating would you give this story? </h3>
-    <img src="${star}" alt="En stjärna" class="logo">
-    <img src="${star}" alt="Andra stjärnan" class="logo">
-    <img src="${star}" alt="Tredje stjärnan" class="logo">
-    <img src="${star}" alt="Fjärde stjärnan" class="logo">
-    <img src="${star}" alt="Femte stjärnan" class="logo">
+    <div class="star starFlex">
+      <div class="star starFlex">
+        <div class="star starFlex">
+          <div class="star starFlex">
+            <div class="star starFlex">
+    <img src="${star}" alt="First star" class="star">
+  </div>
+    <img src="${star}" alt="Second star" class="star">
+          </div>
+    <img src="${star}" alt="Third star" class="star">
+        </div>
+    <img src="${star}" alt="Fourth star" class="star">
+      </div>
+    <img src="${star}" alt="Fifth star" class="star">
+    </div>
+
     <h3 id="Feedback">
       Thanks again, you are welcome to give feedback as a
       <a href="https://github.com/Hjalmar-Lundmark/te4-story/issues">github issue</a>
@@ -110,13 +127,13 @@ const colorButton = document.querySelector('#colorSend')
 const wayButton = document.querySelector('#waySend')
 
 colorButton.addEventListener('click', (e) => {
-  let p1 = document.querySelector('#part1')
+  const p1 = document.querySelector('#part1')
   p1.style.filter = "blur(0)"
 
   wayButton.disabled = false;
 })
 
 wayButton.addEventListener('click', (e) => {
-  let end = document.querySelector('#end')
+  const end = document.querySelector('#end')
   end.style.display = 'block';
 })
