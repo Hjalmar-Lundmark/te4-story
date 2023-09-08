@@ -65,64 +65,70 @@ h1 {
   transition: filter 300ms;
 }
 
+@media (max-width: 600px) {
+  .star {
+    height: 3em;
+  }
+}
+
 .star1:hover {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star2:hover {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star3:hover {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star4:hover {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star5:hover {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star1:hover ~ .star5 {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star1:hover ~ .star4 {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star1:hover ~ .star3 {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star1:hover ~ .star2 {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star2:hover ~ .star3 {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star2:hover ~ .star4 {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star2:hover ~ .star5 {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star3:hover ~ .star4 {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star3:hover ~ .star5 {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .star4:hover ~ .star5 {
-  filter: drop-shadow(0 0 24px #ffe100);
+  filter: drop-shadow(0 0 9px #ffe100);
 }
 
 .starFlex {

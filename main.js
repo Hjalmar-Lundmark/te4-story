@@ -29,45 +29,38 @@ document.querySelector('#app').innerHTML = `
   <div id="part1">
     <h2>The story</h2>
     <p id="pPart1">
-      
+
     </p>
 
-    <h3>Accept the offer?</h3>
-    <button id="ques1opt1" disabled>${story[0].options[0].msg}</button>
-    <button id="ques1opt2" disabled>${story[0].options[1].msg}</button>
+    <div id="divQ1">
+      <h3>Accept the offer?</h3>
+      <button id="ques1opt1" disabled>${story[0].options[0].msg}</button>
+      <button id="ques1opt2" disabled>${story[0].options[1].msg}</button>
+    </div>
 
   </div>
 
 
   <div id="part2">
     <p id="pPart2">
-      
+
     </p>
 
-    <h3>What now?</h3>
-    <button id="q2opt1" disabled>${story[1].options[0].msg}</button>
-    <button id="q2opt2" disabled>${story[1].options[1].msg}</button>
+    <div id="divQ2">
+      <h3>What now?</h3>
+      <button id="ques2opt1" disabled>${story[1].options[0].msg}</button>
+      <button id="ques2opt2" disabled>${story[1].options[1].msg}</button>
+    </div>
   </div>
 
   <div id="part3">
     <p id="pPart3">
-      With newfound purpose, Hjalmar decided to return to Solberg. He set up a small observatory there, inviting
-      local
-      children and adults alike to join him in exploring the cosmos. He became a beloved figure in the town, just
-      as he
-      had been in his childhood, and he shared his passion for the stars with the next generation. <br>
-      <br>
-      Hjalmar Lundmark had come full circle, from a dreamy-eyed child in Solberg to a world-renowned astronomer in
-      Stockholm and back again to his beloved hometown. His journey through the cosmos had not only enriched his
-      life
-      but had also ignited a spark of curiosity in the hearts of those who followed in his footsteps, reminding
-      them
-      that the mysteries of the universe were meant to be explored and shared with all who dared to look up and
-      dream.
-      <br>
-      <br>
-      The end.
+
     </p>
+
+    <a href="/">
+      <button>Spela igen</button>
+    </a>
 
     <h3>Thanks for reading! What rating would you give this story? </h3>
     <div class="starFlex">
@@ -87,8 +80,10 @@ document.querySelector('#app').innerHTML = `
 `
 
 const startBtn = document.querySelector('#startBtn')
-const wayButton1 = document.querySelector('#ques1opt1')
-const wayButton2 = document.querySelector('#ques1opt2')
+const ques1opt1Btn = document.querySelector('#ques1opt1')
+const ques1opt2Btn = document.querySelector('#ques1opt2')
+const ques2opt1Btn = document.querySelector('#ques2opt1')
+const ques2opt2Btn = document.querySelector('#ques2opt2')
 
 startBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -96,20 +91,59 @@ startBtn.addEventListener('click', (e) => {
   const part1 = document.querySelector('#part1')
   part1.style.display = "block";
 
-  wayButton1.disabled = false;
-  wayButton2.disabled = false;
+  ques1opt1Btn.disabled = false;
+  ques1opt2Btn.disabled = false;
+
+  startBtn.disabled = true;
 })
 
-wayButton1.addEventListener('click', (e) => {
+
+let part2 = document.querySelector('#part2')
+let divQ2 = document.querySelector('#divQ2')
+ques1opt1Btn.addEventListener('click', (e) => {
   e.preventDefault
   document.querySelector('#pPart2').innerHTML = story[story[0].options[0].nextId].text;
-  const part2 = document.querySelector('#part2')
   part2.style.display = 'block';
 
+  divQ2.style.display = 'block'
+
+  ques2opt1Btn.disabled = false;
+  ques2opt2Btn.disabled = false;
+
+  ques1opt1Btn.disabled = true;
+  ques1opt2Btn.disabled = true;
 })
-wayButton2.addEventListener('click', (e) => {
+ques1opt2Btn.addEventListener('click', (e) => {
   e.preventDefault
   document.querySelector('#pPart2').innerHTML = story[story[0].options[1].nextId].text;
-  const part2 = document.querySelector('#part2')
   part2.style.display = 'block';
+  let part3 = document.querySelector('#part3')
+  part3.style.display = 'block';
+
+  divQ2.style.display = 'none'
+
+  ques2opt1Btn.disabled = false;
+  ques2opt2Btn.disabled = false;
+
+  ques1opt1Btn.disabled = true;
+  ques1opt2Btn.disabled = true;
+})
+
+
+let part3 = document.querySelector('#part3')
+ques2opt1Btn.addEventListener('click', (e) => {
+  e.preventDefault
+  document.querySelector('#pPart3').innerHTML = story[story[1].options[0].nextId].text;
+  part3.style.display = 'block';
+
+  ques2opt1Btn.disabled = true;
+  ques2opt2Btn.disabled = true;
+})
+ques2opt2Btn.addEventListener('click', (e) => {
+  e.preventDefault
+  document.querySelector('#pPart3').innerHTML = story[story[1].options[1].nextId].text;
+  part3.style.display = 'block';
+
+  ques2opt1Btn.disabled = true;
+  ques2opt2Btn.disabled = true;
 })
