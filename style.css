@@ -27,6 +27,10 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 html {
@@ -176,6 +180,7 @@ footer {
 
 #part1 {
   display: none;
+  /*visibility: hidden;*/ /*I could use this here */
 }
 
 #part2 {
