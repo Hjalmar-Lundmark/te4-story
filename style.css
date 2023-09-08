@@ -175,10 +175,17 @@ footer {
 }
 
 #part1 {
-  filter: blur(5px);
-  transition: filter 300ms;
+  display: none;
 }
 
-#end {
+#part2 {
   display: none;
+}
+
+#part3 {
+  display: none;
+}
+
+li {
+  list-style: none;
 }

@@ -1,8 +1,8 @@
 # Min ide
 idk
 
-Berättlse från chatgpt med inblandade frågor?
+Berättelse från chatgpt med inblandade frågor?
 
-Ska frågor låsa upp nästa del?
+Frågor låser upp nästa del?
 
-Tema? idk
+Tema? berättelsen handlar om astronomi så jag tog en passande bakgrund, en bild på natthimmel. 
