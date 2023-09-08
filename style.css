@@ -60,15 +60,72 @@ h1 {
   will-change: filter;
   transition: filter 300ms;
 }
-.star:hover {
+
+.star1:hover {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star2:hover {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star3:hover {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star4:hover {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star5:hover {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star1:hover ~ .star5 {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star1:hover ~ .star4 {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star1:hover ~ .star3 {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star1:hover ~ .star2 {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star2:hover ~ .star3 {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star2:hover ~ .star4 {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star2:hover ~ .star5 {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star3:hover ~ .star4 {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star3:hover ~ .star5 {
+  filter: drop-shadow(0 0 24px #ffe100);
+}
+
+.star4:hover ~ .star5 {
   filter: drop-shadow(0 0 24px #ffe100);
 }
 
 .starFlex {
   margin: 0;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
-  will-change: filter;
 }
 
 button {

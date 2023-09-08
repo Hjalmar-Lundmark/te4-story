@@ -84,20 +84,12 @@ document.querySelector('#app').innerHTML = `
     </p>
 
     <h3>Thanks for reading! What rating would you give this story? </h3>
-    <div class="star starFlex">
-      <div class="star starFlex">
-        <div class="star starFlex">
-          <div class="star starFlex">
-            <div class="star starFlex">
-    <img src="${star}" alt="First star" class="star">
-  </div>
-    <img src="${star}" alt="Second star" class="star">
-          </div>
-    <img src="${star}" alt="Third star" class="star">
-        </div>
-    <img src="${star}" alt="Fourth star" class="star">
-      </div>
-    <img src="${star}" alt="Fifth star" class="star">
+    <div class="starFlex">
+    <img src="${star}" alt="First star" class="star star1">
+    <img src="${star}" alt="Second star" class="star star2">
+    <img src="${star}" alt="Third star" class="star star3">
+    <img src="${star}" alt="Fourth star" class="star star4">
+    <img src="${star}" alt="Fifth star" class="star star5">
     </div>
 
     <h3 id="Feedback">
@@ -125,15 +117,39 @@ document.querySelector('#app').innerHTML = `
 
 const colorButton = document.querySelector('#colorSend')
 const wayButton = document.querySelector('#waySend')
+const colorInput = document.querySelector('#colorInput')
+const wayInput = document.querySelector('#wayInput')
 
-colorButton.addEventListener('click', (e) => {
+function colorSend() {
   const p1 = document.querySelector('#part1')
   p1.style.filter = "blur(0)"
 
   wayButton.disabled = false;
+}
+
+function waySend() {
+  const end = document.querySelector('#end')
+  end.style.display = 'block';
+}
+
+colorButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  colorSend();
+})
+colorInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+      e.preventDefault()
+      colorSend();
+  }
 })
 
 wayButton.addEventListener('click', (e) => {
-  const end = document.querySelector('#end')
-  end.style.display = 'block';
+  e.preventDefault
+  waySend();
+})
+wayInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+      e.preventDefault()
+      waySend();
+  }
 })
