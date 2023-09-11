@@ -61,8 +61,10 @@ h1 {
 
 .star {
   height: 6em;
-  will-change: filter;
-  transition: filter 300ms;
+  will-change: background-color;
+  transition: background-color 300ms;
+  border-radius: 100px;
+  border: 0px;
 }
 
 @media (max-width: 600px) {
@@ -72,63 +74,63 @@ h1 {
 }
 
 .star1:hover {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star2:hover {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star3:hover {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star4:hover {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star5:hover {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star1:hover ~ .star5 {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star1:hover ~ .star4 {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star1:hover ~ .star3 {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star1:hover ~ .star2 {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star2:hover ~ .star3 {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star2:hover ~ .star4 {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star2:hover ~ .star5 {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star3:hover ~ .star4 {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star3:hover ~ .star5 {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .star4:hover ~ .star5 {
-  filter: drop-shadow(0 0 9px #ffe100);
+  background-color: #FFFF88;
 }
 
 .starFlex {
@@ -136,6 +138,13 @@ h1 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+}
+
+.starBtn {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border-radius: 100px;
 }
 
 button {

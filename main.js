@@ -59,11 +59,21 @@ document.querySelector('#app').innerHTML = `
 
     <h3>Thanks for reading! What rating would you give this story? </h3>
     <div class="starFlex">
+    <button class="starBtn star star1" id="star1">
       <img src="${star}" alt="First star" class="star star1">
+    </button>
+    <button class="starBtn star star2" id="star2">
       <img src="${star}" alt="Second star" class="star star2">
+    </button>
+    <button class="starBtn star star3" id="star3">
       <img src="${star}" alt="Third star" class="star star3">
+    </button>
+    <button class="starBtn star star4" id="star4">
       <img src="${star}" alt="Fourth star" class="star star4">
+    </button>
+    <button class="starBtn star star5" id="star5">
       <img src="${star}" alt="Fifth star" class="star star5">
+      </button>
     </div>
 
     <h3 id="Feedback">
@@ -159,4 +169,16 @@ ques2opt2Btn.addEventListener('click', (e) => {
   ques2opt2Btn.disabled = true;
 
   ques2opt2Btn.style.border = "solid 2px black"
+})
+
+
+//star buttons, idk
+const star1st = document.querySelector('#star1');
+const star2nd = document.querySelector('#star2');
+const star3rd = document.querySelector('#star3');
+const star4th = document.querySelector('#star4');
+const star5th = document.querySelector('#star5');
+
+star1st.addEventListener('click', (e) => {
+  star1st.style.background_color = '#FFFF88';
 })
