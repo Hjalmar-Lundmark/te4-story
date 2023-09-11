@@ -172,13 +172,28 @@ ques2opt2Btn.addEventListener('click', (e) => {
 })
 
 
-//star buttons, idk
-const star1st = document.querySelector('#star1');
-const star2nd = document.querySelector('#star2');
-const star3rd = document.querySelector('#star3');
-const star4th = document.querySelector('#star4');
-const star5th = document.querySelector('#star5');
+//star buttons, idk its wack
+const star1 = document.querySelector('#star1');
+const star2 = document.querySelector('#star2');
+const star3 = document.querySelector('#star3');
+const star4 = document.querySelector('#star4');
+const star5 = document.querySelector('#star5');
+let starBool = false;
 
-star1st.addEventListener('click', (e) => {
-  star1st.style.background_color = '#FFFF88';
+star1.addEventListener('click', (e) => {
+  if (!starBool) {
+  star1.style.backgroundColor = '#FFFF88';
+  star2.style.backgroundColor = '#FFFF88';
+  star3.style.backgroundColor = '#FFFF88';
+  star4.style.backgroundColor = '#FFFF88';
+  star5.style.backgroundColor = '#FFFF88';
+  starBool = true;
+  } else {
+  star1.style.backgroundColor = 'transparent';
+  star2.style.backgroundColor = 'transparent';
+  star3.style.backgroundColor = 'transparent';
+  star4.style.backgroundColor = 'transparent';
+  star5.style.backgroundColor = 'transparent';
+  starBool = false;
+  }
 })
