@@ -59,20 +59,20 @@ document.querySelector('#app').innerHTML = `
 
     <h3>Thanks for reading! What rating would you give this story? </h3>
     <div class="starFlex">
-    <button class="starBtn star star1" id="star1">
-      <img src="${star}" alt="First star" class="star star1">
-    </button>
-    <button class="starBtn star star2" id="star2">
-      <img src="${star}" alt="Second star" class="star star2">
-    </button>
-    <button class="starBtn star star3" id="star3">
-      <img src="${star}" alt="Third star" class="star star3">
-    </button>
-    <button class="starBtn star star4" id="star4">
-      <img src="${star}" alt="Fourth star" class="star star4">
-    </button>
-    <button class="starBtn star star5" id="star5">
-      <img src="${star}" alt="Fifth star" class="star star5">
+      <button class="starBtn star star1" id="star1">
+        <img src="${star}" alt="First star" class="star star1">
+      </button>
+      <button class="starBtn star star2" id="star2">
+        <img src="${star}" alt="Second star" class="star star2">
+      </button>
+      <button class="starBtn star star3" id="star3">
+        <img src="${star}" alt="Third star" class="star star3">
+      </button>
+      <button class="starBtn star star4" id="star4">
+        <img src="${star}" alt="Fourth star" class="star star4">
+      </button>
+      <button class="starBtn star star5" id="star5">
+        <img src="${star}" alt="Fifth star" class="star star5">
       </button>
     </div>
 
@@ -172,7 +172,7 @@ ques2opt2Btn.addEventListener('click', (e) => {
 })
 
 
-//star buttons, idk its wack
+//star buttons, kinda wack
 const star1 = document.querySelector('#star1');
 const star2 = document.querySelector('#star2');
 const star3 = document.querySelector('#star3');
@@ -182,18 +182,80 @@ let starBool = false;
 
 star1.addEventListener('click', (e) => {
   if (!starBool) {
-  star1.style.backgroundColor = '#FFFF88';
-  star2.style.backgroundColor = '#FFFF88';
-  star3.style.backgroundColor = '#FFFF88';
-  star4.style.backgroundColor = '#FFFF88';
-  star5.style.backgroundColor = '#FFFF88';
-  starBool = true;
+    star1.style.backgroundColor = '#FFFF88';
+    star2.style.backgroundColor = '#FFFF88';
+    star3.style.backgroundColor = '#FFFF88';
+    star4.style.backgroundColor = '#FFFF88';
+    star5.style.backgroundColor = '#FFFF88';
+    starBool = true;
   } else {
-  star1.style.backgroundColor = 'transparent';
-  star2.style.backgroundColor = 'transparent';
-  star3.style.backgroundColor = 'transparent';
-  star4.style.backgroundColor = 'transparent';
-  star5.style.backgroundColor = 'transparent';
-  starBool = false;
+    star1.style.backgroundColor = 'transparent';
+    star2.style.backgroundColor = 'transparent';
+    star3.style.backgroundColor = 'transparent';
+    star4.style.backgroundColor = 'transparent';
+    star5.style.backgroundColor = 'transparent';
+    starBool = false;
+  }
+})
+
+star2.addEventListener('click', (e) => {
+  if (!starBool) {
+    star2.style.backgroundColor = '#FFFF88';
+    star3.style.backgroundColor = '#FFFF88';
+    star4.style.backgroundColor = '#FFFF88';
+    star5.style.backgroundColor = '#FFFF88';
+    starBool = true;
+  } else {
+    star1.style.backgroundColor = 'transparent';
+    star2.style.backgroundColor = 'transparent';
+    star3.style.backgroundColor = 'transparent';
+    star4.style.backgroundColor = 'transparent';
+    star5.style.backgroundColor = 'transparent';
+    starBool = false;
+  }
+})
+
+star3.addEventListener('click', (e) => {
+  if (!starBool) {
+    star3.style.backgroundColor = '#FFFF88';
+    star4.style.backgroundColor = '#FFFF88';
+    star5.style.backgroundColor = '#FFFF88';
+    starBool = true;
+  } else {
+    star1.style.backgroundColor = 'transparent';
+    star2.style.backgroundColor = 'transparent';
+    star3.style.backgroundColor = 'transparent';
+    star4.style.backgroundColor = 'transparent';
+    star5.style.backgroundColor = 'transparent';
+    starBool = false;
+  }
+})
+
+star4.addEventListener('click', (e) => {
+  if (!starBool) {
+    star4.style.backgroundColor = '#FFFF88';
+    star5.style.backgroundColor = '#FFFF88';
+    starBool = true;
+  } else {
+    star1.style.backgroundColor = 'transparent';
+    star2.style.backgroundColor = 'transparent';
+    star3.style.backgroundColor = 'transparent';
+    star4.style.backgroundColor = 'transparent';
+    star5.style.backgroundColor = 'transparent';
+    starBool = false;
+  }
+})
+
+star5.addEventListener('click', (e) => {
+  if (!starBool) {
+    star5.style.backgroundColor = '#FFFF88';
+    starBool = true;
+  } else {
+    star1.style.backgroundColor = 'transparent';
+    star2.style.backgroundColor = 'transparent';
+    star3.style.backgroundColor = 'transparent';
+    star4.style.backgroundColor = 'transparent';
+    star5.style.backgroundColor = 'transparent';
+    starBool = false;
   }
 })
