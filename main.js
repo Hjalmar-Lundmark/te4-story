@@ -259,3 +259,27 @@ star5.addEventListener('click', (e) => {
     starBool = false;
   }
 })
+
+
+//testing, idk
+//run(document.querySelector('#part1'))
+
+function run (element, position = 0) {
+  element.innerHTML = ""
+
+  let story2 = story[position]
+
+  let p = document.createElement("p")
+  p.innerHTML = story2.text
+  element.appendChild(p)
+
+  story2.options.forEach((option) =>{
+      let button = document.createElement("button")
+      button.innerText = option.msg
+      button.addEventListener("click", () => {
+          run(element, option.nextId)
+      })
+      element.appendChild(button)
+  })
+  
+}
