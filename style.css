@@ -16,7 +16,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #B3B5FF;
   text-decoration: inherit;
 }
 a:hover {
@@ -39,7 +39,7 @@ html {
 }
 
 main {
-  background-color: #242424;
+  background-color: #424242;
   padding: 1em;
 }
 
@@ -177,6 +177,9 @@ button:disabled {
     color: #213547;
     background-color: black;
   }
+  a {
+    color: #4751FF;
+  }
   a:hover {
     color: #747bff;
   }
@@ -193,6 +196,10 @@ footer {
   color: white;
   padding-bottom: 2rem;
   padding-top: 1rem;
+}
+
+footer > * > p > a {
+  color: #646cff;
 }
 
 #part1 {

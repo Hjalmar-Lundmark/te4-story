@@ -78,7 +78,7 @@ document.querySelector('#app').innerHTML = `
 
     <h3 id="Feedback">
       Thanks again, you are welcome to give feedback as a
-      <a href="https://github.com/Hjalmar-Lundmark/te4-story/issues">github issue</a>
+      <a href="https://github.com/Hjalmar-Lundmark/te4-story/issues">github issue</a>.
     </h3>
   </div>
 </main>
