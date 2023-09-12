@@ -189,11 +189,11 @@ star1.addEventListener('click', (e) => {
     star5.style.backgroundColor = '#FFFF88';
     starBool = true;
   } else {
-    star1.style.backgroundColor = 'transparent';
-    star2.style.backgroundColor = 'transparent';
-    star3.style.backgroundColor = 'transparent';
-    star4.style.backgroundColor = 'transparent';
-    star5.style.backgroundColor = 'transparent';
+    star1.style = '';
+    star2.style = '';
+    star3.style = '';
+    star4.style = '';
+    star5.style = '';
     starBool = false;
   }
 })
@@ -206,11 +206,11 @@ star2.addEventListener('click', (e) => {
     star5.style.backgroundColor = '#FFFF88';
     starBool = true;
   } else {
-    star1.style.backgroundColor = 'transparent';
-    star2.style.backgroundColor = 'transparent';
-    star3.style.backgroundColor = 'transparent';
-    star4.style.backgroundColor = 'transparent';
-    star5.style.backgroundColor = 'transparent';
+    star1.style = '';
+    star2.style = '';
+    star3.style = '';
+    star4.style = '';
+    star5.style = '';
     starBool = false;
   }
 })
@@ -222,11 +222,11 @@ star3.addEventListener('click', (e) => {
     star5.style.backgroundColor = '#FFFF88';
     starBool = true;
   } else {
-    star1.style.backgroundColor = 'transparent';
-    star2.style.backgroundColor = 'transparent';
-    star3.style.backgroundColor = 'transparent';
-    star4.style.backgroundColor = 'transparent';
-    star5.style.backgroundColor = 'transparent';
+    star1.style = '';
+    star2.style = '';
+    star3.style = '';
+    star4.style = '';
+    star5.style = '';
     starBool = false;
   }
 })
@@ -237,11 +237,11 @@ star4.addEventListener('click', (e) => {
     star5.style.backgroundColor = '#FFFF88';
     starBool = true;
   } else {
-    star1.style.backgroundColor = 'transparent';
-    star2.style.backgroundColor = 'transparent';
-    star3.style.backgroundColor = 'transparent';
-    star4.style.backgroundColor = 'transparent';
-    star5.style.backgroundColor = 'transparent';
+    star1.style = '';
+    star2.style = '';
+    star3.style = '';
+    star4.style = '';
+    star5.style = '';
     starBool = false;
   }
 })
@@ -251,11 +251,11 @@ star5.addEventListener('click', (e) => {
     star5.style.backgroundColor = '#FFFF88';
     starBool = true;
   } else {
-    star1.style.backgroundColor = 'transparent';
-    star2.style.backgroundColor = 'transparent';
-    star3.style.backgroundColor = 'transparent';
-    star4.style.backgroundColor = 'transparent';
-    star5.style.backgroundColor = 'transparent';
+    star1.style = '';
+    star2.style = '';
+    star3.style = '';
+    star4.style = '';
+    star5.style = '';
     starBool = false;
   }
 })
